@@ -9,3 +9,5 @@ Install pip
 Install virtualenv
 
 Slack
+
+pip install slackclient -t ./
