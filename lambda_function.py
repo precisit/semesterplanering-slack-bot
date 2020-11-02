@@ -15,7 +15,7 @@ slack_client = WebClient(slack_token, ssl=True)
 def send_reminder():
     dt = datetime.datetime.today()
     current_month = calendar_sv[dt.month-1]
-    semester_planning_month = calendar_sv[(dt.month+3-1) % 11]
+    semester_planning_month = calendar_sv[(dt.month+3-1) % 12]
     try:
         response = slack_client.chat_postMessage(
             channel="semesterplanerings-bot",
